@@ -1,8 +1,16 @@
 package com.testgit;
 
+import org.testng.annotations.Test;
+
 public class TestGit {
 
-	public static void main(String[] args) {
-		System.out.println("第一次提交git");
+	@Test
+	public static void testGit1() {
+		System.out.println("增加Test注解，添加testGit1方法");
+	}
+
+	@Test
+	public static void testGit2() {
+		System.out.println("添加testGit2方法");
 	}
 }
