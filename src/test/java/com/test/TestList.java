@@ -78,4 +78,9 @@ public class TestList {
 		System.out.println("List集合大小为：" + array.size());
 	}
 
+	@Test
+	public void testList6() {
+		List<Integer> array = new ArrayList<Integer>();
+	}
+
 }
