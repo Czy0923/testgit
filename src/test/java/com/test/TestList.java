@@ -1,6 +1,7 @@
 package com.test;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.testng.annotations.Test;
@@ -80,7 +81,31 @@ public class TestList {
 
 	@Test
 	public void testList6() {
-		List<Integer> array = new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
+		Iterator<Integer> it = list.iterator();
+		if (it.hasNext()) {
+			Integer integer = it.next();
+			System.out.println(it);
+		}
+	}
+
+	@Test
+	public void testList7() {
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
+		Object[] arr = list.toArray();
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
 	}
 
 }
